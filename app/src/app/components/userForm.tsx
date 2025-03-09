@@ -45,36 +45,36 @@ export default function UserForm() {
   };
 
   return (
-    <div className="p-15 font-sans text-sm font-normal">
+    <div className="p-15 font-serif text-[12px]">
       <div>
-        <h3 className="mb-10 text-black">Name</h3>
+        <h3 className="mb-10 text-black font-serif text-[12px]">Name</h3>
         <div className="mb-20">
           <input
             type="text"
             value={newUser.name}
             onChange={(e) => setNewUser({ ...newUser, name: e.target.value })}
             placeholder="New user name"
-            className="p-5 bg-white rounded border border-black mr-10 text-black"
+            className="p-5 bg-white rounded border border-black mr-10 text-black font-serif text-[12px]"
           />
           <button
             onClick={addUser}
-            className="p-5 bg-[#7CB9E8] rounded text-white w-50"
+            className="p-5 bg-[#7CB9E8] rounded text-white font-serif text-[12px] w-50"
           >
             Add
           </button>
         </div>
-        <h3 className="mb-10 text-black">List of users</h3>
+        <h3 className="mb-10 text-black font-serif text-[12px]">List of users</h3>
         {users.map(user => (
           <div key={user.id} className="mb-10 flex items-center text-black">
             <input
               type="text"
               value={user.name}
               onChange={(e) => updateUser(user.id, 'name', e.target.value)}
-              className="p-5 bg-white rounded border border-black mr-10 text-black"
+              className="p-5 bg-white rounded border border-black mr-10 text-black font-serif text-[12px]"
             />
             <button
               onClick={() => deleteUser(user.id)}
-              className="p-5 bg-red-400 rounded text-white w-50"
+              className="p-5 bg-red-400 rounded text-white font-serif text-[12px] w-50"
             >
               Delete
             </button>
