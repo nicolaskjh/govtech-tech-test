@@ -63,7 +63,7 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/nicolaskjh/govtech-tech-test.git
 2. **Navigate to project directory**:
    ```
-   cd govtech-tech-test\app
+   cd govtech-tech-test/app
    ```
 3. **Install dependencies**:
    ```
